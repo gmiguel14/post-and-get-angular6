@@ -1,0 +1,10 @@
+<div class='form'>
+  <form>
+    <input type="number" placeholder="ID" #id>
+    <input type="text" placeholder="Title" #title>
+    <input type="text" placeholder="Body" #body>
+    <button (click)='enviar(id,title,body)'>Enviar</button>
+
+    <div *ngIf="mensagemErro">Deu algum erro ai, mano!</div>
+  </form>
+</div>
